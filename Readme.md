@@ -53,3 +53,39 @@ exports = function(arg){
 };
 ```
 
+## Utilisation des trigger de base de donnee
+
+On peux ajouter des triggers, dans notre exemple de chat nous pourrions ajouter un trigger lors d'un echange de message dans notre chat, afin que l'utilisateur recoive une notification d'un nouveau message.
+
+Pour cela cliquer sur trigger, completer le formulaire puis selectionner le type de declencheur ici insert (lors d'un insert en base de donnee on envoi une notification).
+
+
+## Utilisation de l'hosting.
+
+Permet de deployer les applications.
+
+**IMPORTANT**
+
+Dans **Tous** les cas une authentification sera necessaire, pour acceder a Mongodb. Soit logging mot de passe, soit coder une maniere d'authentification *anonyme*.
+
+
+## Rappel transactionnel ACID
+
+En informatique, les proprietes ACID (atomicite, coherence, isolation et durabilite) sont un ensemble de proprietes qui garantissent qu'une transaction informatique est executee de façon fiable.
+
+**Atomicite**
+
+La propriete d'atomicite assure qu'une transaction se fait au complet ou pas du tout : si une partie d'une transaction ne peut être faite, il faut effacer toute trace de la transaction et remettre les donnees dans l'etat où elles etaient avant la transaction. L'atomicite doit être respectee dans toutes situations, comme une panne d'electricite, une defaillance de l'ordinateur, ou une panne d'un disque magnetique.
+
+**Coherence**
+
+La propriete de coherence assure que chaque transaction amenera le systeme d'un etat valide a un autre etat valide. Tout changement a la base de donnees doit être valide selon toutes les regles definies, incluant mais non limitees aux contraintes d'integrite, aux rollbacks en cascade, aux declencheurs de base de donnees, et a toutes combinaisons d'evenements.
+
+
+**Isolation**
+
+Toute transaction doit s'executer comme si elle etait la seule sur le systeme. Aucune dependance possible entre les transactions. La propriete d'isolation assure que l'execution simultanee de transactions produit le même etat que celui qui serait obtenu par l'execution en serie des transactions. Chaque transaction doit s'executer en isolation totale : si T1 et T2 s'executent simultanement, alors chacune doit demeurer independante de l'autre.
+
+**Durabilite**
+
+La propriete de durabilite assure que lorsqu'une transaction a ete confirmee, elle demeure enregistree même a la suite d'une panne d'electricite, d'une panne de l'ordinateur ou d'un autre probleme. Par exemple, dans une base de donnees relationnelle, lorsqu'un groupe d'enonces SQL a ete execute, les resultats doivent être enregistres de façon permanente, même dans le cas d'une panne immediatement apres l'execution des enonces.
