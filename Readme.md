@@ -32,7 +32,7 @@ On peux a partir de l'interface Realm Mongodb:
 * Creer des fontions, avantage principal de MongoDbRealm.
 
 
-## Creation fonction dans Atlas
+## Creation fonction dans Atlas
 
 Apres avoir donnee un nom a la fonction, nous avons la possibilite de donnee un acces a celle-ci soit par l'userId ou autres (ici system, car les message de chat transistera une autorisation du system).
 
