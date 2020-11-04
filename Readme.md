@@ -5,7 +5,7 @@ Nous allons creer une base de donnee MongoDB dans le cloud qui sera destinees a 
 
 ## Installation
 
-Connectez vous a mongodb cloud atlas qui vas initialiser notre bbase de donnee et creer un cluster AWS Region Irland.
+Connectez vous a mongodb cloud atlas qui vas initialiser notre base de donnee et creer un cluster AWS Region Irland.
 
 [MONGODB REALM](https://cloud.mongodb.com/)
 
@@ -18,7 +18,7 @@ Plusieurs bases de donnees peuvent etre initialiser pour un seul cluster.
 
 Cliquer sur "Collections"/ "Add My Own Data", indiquer le nom de la base donnee (ici: livecoding) et un nom de collections (ici: chat).
 
-## Deployement application (Realm)
+## Deployement application (Realm)
 
 Partie serverless, c'est a dire la configuration de deployement de l'application.
 
@@ -60,7 +60,7 @@ On peux ajouter des triggers, dans notre exemple de chat nous pourrions ajouter 
 Pour cela cliquer sur trigger, completer le formulaire puis selectionner le type de declencheur ici insert (lors d'un insert en base de donnee on envoi une notification).
 
 
-## Utilisation de l'hosting.
+## Utilisation de l'hosting.
 
 Permet de deployer les applications.
 
@@ -69,7 +69,7 @@ Permet de deployer les applications.
 Dans **Tous** les cas une authentification sera necessaire, pour acceder a Mongodb. Soit logging mot de passe, soit coder une maniere d'authentification *anonyme*.
 
 
-## Rappel transactionnel ACID
+## Rappel transactionnel ACID
 
 En informatique, les proprietes ACID (atomicite, coherence, isolation et durabilite) sont un ensemble de proprietes qui garantissent qu'une transaction informatique est executee de façon fiable.
 
